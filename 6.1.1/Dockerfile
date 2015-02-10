@@ -5,7 +5,7 @@
 # Get required ZIP file from: https://access.redhat.com/jbossnetwork/restricted/softwareDownload.html?softwareId=32483&product=appplatform
 #
 #
-FROM jboss/base-jdk:7
+FROM dockerfile/java:oracle-java7
 ADD files/jboss-eap-6.1.1.zip /tmp/
 RUN unzip /tmp/jboss-eap-6.1.1.zip -d /opt/jboss
 
